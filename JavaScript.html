@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+
+		var num;
+		var guessNumber;
+		var rand = Math.floor(Math.random()*10 + 1);
+
+		num = window.prompt('Please guess a number');
+		guessNumber = parseInt(num);
+        
+        
+		function guess(){
+		while(rand!=guessNumber){
+			num = window.prompt('Guess again');
+			guessNumber = parseInt(num);
+
+		}
+		while(rand == guessNumber){
+		    alert('Congratulation!!!');
+		    break;
+		}
+	}
+	guess();
+
+
+		
+	</script>
+
+</body>
+</html>
